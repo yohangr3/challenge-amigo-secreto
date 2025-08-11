@@ -53,4 +53,16 @@ function sortearAmigos() {
   let elementoLista = document.querySelector(".name-list");
   elementoLista.innerHTML = ""; 
 }
- 
+
+function reiniciarJuego(){
+  amigos = [];
+  document.querySelector(".input-name").value = "";
+  document.getElementById("resultado").innerHTML = "";
+  alert("El juego ha sido reiniciado. Puedes agregar nuevos amigos.");
+  actualizarLista();
+  
+}
+
+
+
+
